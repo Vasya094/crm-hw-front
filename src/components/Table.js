@@ -28,8 +28,10 @@ export default function TableOfDeals() {
     try {
       console.trace()
       const result = await axios.get(
-        `${process.env.REACT_APP_API_URL}:${
+        `${process.env.REACT_APP_API_URL}${
           process.env.REACT_APP_API_PORT
+            ? `:${process.env.REACT_APP_API_PORT}`
+            : ""
         }/api/leads?query=${query || ""}`
       )
       setLastQuery(query || "")
