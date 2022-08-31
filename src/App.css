@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.sub-row {
+  background-color: rgba(220, 220, 220, 0.61);
+}
+
+.table-container {
+  margin: 40px;
+}
+
+.info-message {
+  text-align: center;
+  margin: 1rem;
+}
+
+.status-chip {
+  margin: 8px;
+}
+
+.status-chip-container {
+  width: max-content;
+  border-radius: 9px;
+  padding: 3px;
+  border: 1px solid gray;
+}
+
+.response-user-name {
+  display: flex;
+  align-items: flex-end;
+}
+ .cont-name-icon {
+  justify-content: space-between;
+ }
