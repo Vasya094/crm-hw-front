@@ -49,7 +49,6 @@ export default function TableOfDeals() {
     fetchMyAPI()
   }, [])
   React.useEffect(() => {
-    debugger
     if (inputValue.length >= 3) {
       setLoading(true)
       fetchMyAPI(inputValue)
